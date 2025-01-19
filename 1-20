@@ -162,10 +162,9 @@ inner join product  p on p.model = l.model
 
 with asd as 
 (
-select 
-model, price
-from printer
-where color = 'y'
+select model, price
+  from printer
+ where color = 'y'
 )
 select distinct maker, asd.price 
   from product p 
